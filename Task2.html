@@ -1,0 +1,24 @@
+<! DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <canvas id="c" width="600" height="600" style="border: 2px black solid;"></canvas>
+        <script>
+            var cnv = document.getElementById('c');
+            var ctx = cnv.getContext('2d');
+            
+            var rg1 = ctx.createRadialGradient(430, 420, 10,300, 300, 200);
+            rg1.addColorStop(0,"white");
+            rg1.addColorStop(1,"blue");
+            
+            ctx.fillStyle= rg1;
+            
+            //arc(x, y, radius, startAngle, endAngle, antiClockwise );
+            ctx.arc(300,300,200,0,2*Math.PI);
+            ctx.fill();
+        
+            
+        </script>
+    </body>
+</html>
