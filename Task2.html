@@ -8,6 +8,19 @@
             var cnv = document.getElementById('c');
             var ctx = cnv.getContext('2d');
             
+           
+            
+            var rg2 = ctx.createRadialGradient(750, 300,10,600, 300, 600);
+            rg2.addColorStop(0,"white");
+            rg2.addColorStop(1,"blue");
+            
+            ctx.fillStyle= rg2;
+            
+            //arc(x, y, radius, startAngle, endAngle, antiClockwise );
+            ctx.arc(300,300,250,0,2*Math.PI);
+            ctx.fill();
+            
+            ctx.beginPath();
             var rg1 = ctx.createRadialGradient(430, 420, 10,300, 300, 200);
             rg1.addColorStop(0,"white");
             rg1.addColorStop(1,"blue");
@@ -17,7 +30,6 @@
             //arc(x, y, radius, startAngle, endAngle, antiClockwise );
             ctx.arc(300,300,200,0,2*Math.PI);
             ctx.fill();
-        
             
         </script>
     </body>
