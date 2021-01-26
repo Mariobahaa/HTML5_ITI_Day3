@@ -8,12 +8,12 @@
             var cnv = document.getElementById('c');
             var ctx = cnv.getContext('2d');
             
-            var lg = ctx.createLinearGradient(0,0,100,100);
+            var lg = ctx.createLinearGradient(100,100,200,200);
             lg.addColorStop(0,"blue");
             lg.addColorStop(1,"pink");
             
             ctx.fillStyle = lg;
-            ctx.fillRect(0,0,200,200);
+            ctx.fillRect(100,100,100,100);
         </script>
     </body>
 </html>
