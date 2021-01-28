@@ -1,0 +1,10 @@
+  #img:not( :hover ){
+                transition: all 3s;
+                opacity: 100%;
+            }
+            
+            #img:hover{
+                transition: all 5s;
+                opacity: 0%;
+            }
+                  
