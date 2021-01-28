@@ -1,0 +1,79 @@
+
+.shape{
+   transform: rotate(180deg);
+    position: absolute;
+    left: 90px;
+    top: 125px;
+}
+.heart {
+  background-color: black;
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: black;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+  top: -15px;
+  left: 0;
+}
+
+.heart:after {
+  left: 15px;
+  top: 0;
+}
+
+.tale{
+  width: 0; 
+  height: 0; 
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 20px solid black;
+  transform: rotate(45deg);
+  position:absolute;
+  bottom:20px;
+  right:-3px
+}
+
+
+#card{
+    width: 100px;
+    height: 200px;
+    border: 3px red solid;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+@font-face {
+    font-family: "Algerian";
+    src: url('./font/Algerian Regular/Algerian Regular.ttf') format('tff');
+}
+
+h1{
+    font-family: Algerian;
+    position: absolute;
+    
+}
+
+#top{
+    top: 0px;
+    left: 25px;
+}
+
+#bottom{
+    top:235px;
+    left: 170px;
+}
