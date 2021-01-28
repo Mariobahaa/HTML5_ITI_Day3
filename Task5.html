@@ -16,26 +16,28 @@
                 
             }
             
-            input[type="text"]:valid+span{ 
-                content: "n";
+            input[type="text"]:invalid+span::after{ 
+                content: "Please Enter a series of alphanumeric charactes with length of 5 letter or more";
+                 color: firebrick;
             }
             
-             input[type="email"]:valid+span{ 
-                content: "n";
+            input[type="email"]:invalid+span::after{ 
+                content: "Email does not contain any special characters other than one '@' ";
+                color: firebrick;
             }
             
-           
+            
         </style>
     </head>
     <body>
         <form>
             <h1>Change E-mail Address: </h1>
-            <input type="text" placeholder="Username" required pattern="[a-zA-Z]{5}[a-zA-Z]*" >
-            <span> Please Enter a series of alphanumeric charactes with length of 5 letter or more </span>
+            <input type="text" placeholder="Username" id="u" required pattern="[a-zA-Z]{5}[a-zA-Z]*">
+            <span> </span>
             <br>
             <br>
-            <input type="email" placeholder="E-mail" required >
-            <span> Email does not contain any special characters other than one "@" </span>
+            <input type="email" placeholder="E-mail" id="m" required>
+            <span> </span>
             <br>
             <br>
             <br>
