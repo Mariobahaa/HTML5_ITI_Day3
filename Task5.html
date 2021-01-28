@@ -1,0 +1,45 @@
+<! DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            form{
+                border: black 3px solid;
+                padding: 20px;
+            }
+            input:valid{
+                 border: black 2px solid;
+            }
+            input{
+                border: red 2px solid;
+                display: block;
+                border-radius: 5px;
+                
+            }
+            
+            input[type="text"]:valid+span{ 
+                content: "n";
+            }
+            
+             input[type="email"]:valid+span{ 
+                content: "n";
+            }
+            
+           
+        </style>
+    </head>
+    <body>
+        <form>
+            <h1>Change E-mail Address: </h1>
+            <input type="text" placeholder="Username" required pattern="[a-zA-Z]{5}[a-zA-Z]*" >
+            <span> Please Enter a series of alphanumeric charactes with length of 5 letter or more </span>
+            <br>
+            <br>
+            <input type="email" placeholder="E-mail" required >
+            <span> Email does not contain any special characters other than one "@" </span>
+            <br>
+            <br>
+            <br>
+            <button>Change</button>
+        </form>
+    </body>
+</html>
